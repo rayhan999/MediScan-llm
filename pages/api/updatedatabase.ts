@@ -1,7 +1,8 @@
 import { updateVectorDB } from "@/utils";
+import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf";
 import { Pinecone } from "@pinecone-database/pinecone";
 import { DirectoryLoader } from "langchain/document_loaders/fs/directory";
-import { PDFLoader } from "langchain/document_loaders/fs/pdf";
+// import { PDFLoader } from "langchain/document_loaders/fs/pdf";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 import { NextApiRequest, NextApiResponse } from "next";
 import path from "path";
